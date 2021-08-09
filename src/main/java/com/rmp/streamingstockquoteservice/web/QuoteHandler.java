@@ -18,6 +18,7 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 @RequiredArgsConstructor
 @Component
 public class QuoteHandler {
+
     private final QuoteGeneratorService quoteGeneratorService;
 
     public Mono<ServerResponse> fetchQuotes(ServerRequest request) {
